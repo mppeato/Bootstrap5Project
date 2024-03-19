@@ -1,0 +1,119 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'variables';
+
+#content{ display: flex;}
+
+main{
+    flex: 6;
+    min-width: 20em;
+    background-color: white;
+    order: 2;
+    padding: 1em;
+    display: block;
+}
+
+aside{
+    flex: 4;
+    order: 3;
+    float: right;
+    padding: 1em;
+}
+
+nav{ 
+    float: left;
+    background-color: rgb(185, 189, 191);
+}
+
+*{ 
+    box-sizing: border-box;
+    margin: 10;
+}
+
+header{
+    padding: 2em;
+    font-size: 150%;
+    text-align: center;
+    font-weight: bold;
+}
+
+body{ font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+nav ul{
+    list-style-type: none;
+    padding: 1em;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 1em;
+    font-weight: bold;
+    color: rgb(35, 98, 188);
+}
+
+nav a:hover{
+    color: navy;
+    text-decoration: underline;
+}
+
+figure{ text-align: center;}
+figcaption{
+    font-style: italic;
+    text-align: center;
+}
+
+h2{
+    background-color: rgb(35, 98, 188);
+    color: rgb(185, 189, 191);
+    padding: .5em;
+}
+
+footer{
+    background-color: rgb(35, 98, 188);
+    font-size: 100%;
+    text-align: center;
+    padding: 2em;
+    color: white;
+}
+
+#spacer{
+    padding: 2px;
+    margin: 2px;
+}
+
+#light{
+    background-color: rgb(200, 227, 238);
+    padding: 10px;
+}
+
+.row, .col{
+    padding: 3px;
+}
+
+.pad{
+    padding: 10px;
+}
+
+// Nesting
+header{
+    background-color: $primaryblue;
+    h1{
+        color: $primary;
+        font-size: 3em;
+    }
+}
+
+aside{
+    background-color: $secondaryblue;
+}
+
+// Additional Sass/SCSS technique: use of @extend
+.main-border{
+    border: 1px solid black;
+    padding: 2px;
+}
+
+.border-section{
+    @extend .main-border;
+    // border-style: double;
+    padding: 2px;
+}

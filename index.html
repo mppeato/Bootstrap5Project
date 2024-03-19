@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Bootstrap Demo</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Grey's Anatomy</h1>    
+        </header>
+        <div id="content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                    <li><a href="episodes.html">Episodes</a></li>
+                    <li><a href="seattle.html">Seattle</a></li>
+                </ul>
+            </nav>
+            <aside>
+                <figure>
+                    <!-- added a class to use the @extend directive -->
+                    <!-- added a .rounded-circle class to change the shape of my image -->
+                    <img src="media/greys.jpeg" class="rounded-circle main-border" width="250" height="355" id="floatright" alt="Grey's Anatomy Cast">
+                    <figcaption>Grey's Anatomy Cast</figcaption>
+                </figure>
+            </aside>
+            <main>
+                <h2>About</h2>
+                <p>A medical and romantic drama centered around Meredith Grey, an aspiring surgeon and daughter of one of the best surgeons, Dr. Ellis Grey. Throughout the series, Meredith goes through professional and personal challenges along with fellow surgeons at Seattle Grace Hospital.</p>
+                <h2>Setting</h2>
+                <p>Although Grey's Anatomy is almost entirely set in Seattle, Washington, very little of the series is actually shot there. In the earlier seasons, there were more filming locations in Seattle, however as the show went on, more and more sets were built on the sound stages in Los Angeles, California.</p>
+                <h2>Grey's Anatomy Spinoffs</h2>
+                <ul>
+                    <li><a href="#" title="A seattle based series about firefighters and paramedics who frequently are seen in Grey's Anatomy" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="A fun and thrilling series, give it a watch!">Station 19</a></li>
+                    <li>Private Practice</li>
+                    <li>Grey's Anatomy: B-Team</li>
+                </ul>
+            </main>
+        </div>
+        <section>
+            <!-- Implementation of the Bootstrap 5 Grid -->
+            <h2>Bootstrap 5 Grid</h2>
+            <p class="pad">The Bootstrap 5 Grid component I've decided to incorporate below allow for equal-width areas within two rows. The top row divides the full width into two equal areas and the row beneath it allows for the full width to be divided into three equal areas. In my case and for other projects this could be a great way to display multiple photos to showcase what your site has to offer in a professional and easy flexible layout. It's also nice as the grid layout I have chosen is usable and fluid for all device viewports from mobile to desktop.</p>
+            <!-- added a second class to allow the @extend directive to follow one from above -->
+            <div class="container text-center border-section" id="light">
+                <div class="row">
+                  <div class="col">
+                    <img src="/media/greys1.jpeg" alt="Older full Grey's Anatomy cast">
+                  </div>
+                  <div class="col">
+                    <img src="/media/greys2.jpeg" alt="Current full Grey's Anatomy cast">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <img src="/media/greys3.jpeg" alt="Oringinal Grey's characters first day meeting Miranda">
+                  </div>
+                  <div class="col">
+                    <img src="/media/greys4.jpeg" alt="New interns taking a break">
+                  </div>
+                  <div class="col">
+                    <img src="/media/greys5.jpeg" alt="Derrek in elevator with his ex-wife, ex-girlfriend, current fling, and bestfriend">
+                  </div>
+                </div>
+            </div> <br>
+            <!-- Implementation of 2 different navigation options -->
+            <h2>Navigation</h2>
+            <p class="pad">The two examples I chose to incorporate as examples is a navigation with tabs as well as a sticky navigation on the bottom. The tab example was added with a simple class '.nav-tabs'. Having a tabbed interface allows users to reach their intended destination with ease as there is a larger area for them to click on in comparison to having to be exact upon clicking on the words in normal navigation systems. The second navigation example I provided was one with a sticky navigation as it will always appear on the bottom of the screen no matter where a user might be on my page. This allows users to click from page to page without having to scroll back up to the top of the page to the main navigation area. This was added through the use of the 'nav bar fixed-bottom bg-body-tertiary' class. As an added bonus, both of the examples I provided are both responsive allowing users with different screen sizes to use this site and the nav will adjust accordingly.</p>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="characters.html">Characters</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Episodes">Episodes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </section>
+        <footer>
+            <p>Copyright &copy; Malia Peato 2023</p>
+        </footer><br><br>
+        <nav class="navbar fixed-bottom bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Home</a>
+              <a href="characters.html">Characters</a>
+              <a href="episodes.html">Episodes</a>
+              <a href="seattle.html">Seattle</a>
+            </div>
+          </nav>
+
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/popper.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        
+    </body>
+</html>
